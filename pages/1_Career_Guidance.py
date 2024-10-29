@@ -35,7 +35,7 @@ st.set_page_config(
 # endregion <--------- Streamlit App Configuration --------->
 
 # General Career Guidance & Upskilling Questions
-st.header("General Career Guidance & Upskilling Questions 📈")
+st.header("Career Guidance Questions 📈")
 st.write(
         "Wondering how to navigate the ever-changing job market? Or maybe you're trying to find the career path that fits you best? We've got you covered!"
         )

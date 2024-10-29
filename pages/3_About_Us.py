@@ -26,12 +26,16 @@ st.write("""
 
 with st.expander("**🌱Project Scope Statement**"):
     st.markdown("""
-    The Career Guidance & Skills Development Portal is here to help you grow in your career and improve your skills. Our mission is to make it easy for you to find upskilling opportunities, career advice, and personalized recommendations so you can confidently move forward in your professional journey. 
-     """)
+    The Career Guidance & Skills Development Portal is here to help you grow in your career and improve your skills. Our mission is to make it easy for you to make use upskilling opportunities, and receive personalized career advice so you can confidently move forward in your professional journey. 
+    
+    **Use Cases:**
+    1. Career Guidance Workforce Singapore  
+    2. Upskilling with SkillsFuture  
+    """)
 
 with st.expander("**🤖Career Guidance & Skills Development**"):
     st.markdown("""
-    This platform uses knowledge from the AI Champions Bootcamp 2024 to give you personalized recommendations for upskilling using SkillsFuture credits, along with career coaching tips based on your interests and goals. 🤖 The portal makes it easy to improve your skills and advance your career by providing helpful resources through a simple Streamlit interface.
+    This platform uses knowledge from the AI Champions Bootcamp 2024 to give you personalized guidance on using SkillsFuture credits, along with career coaching tips based on your interests and goals. 🤖 The portal makes it easy to improve your skills and advance your career by providing helpful resources through a simple Streamlit interface.
 
     We believe that with the right guidance and resources, anyone can reach their potential and achieve their career goals. 🌟 By giving you clear information, we want to make learning new skills and advancing your career easy and engaging for everyone.
     """)
@@ -47,6 +51,10 @@ with st.expander("**💡Objectives**"):
 with st.expander("**📚 Data Sources**"):
     st.markdown("""
     The data used in this portal comes from trusted sources, including SkillsFuture Singapore and Workforce Singapore. The information is collected to provide accurate and up-to-date recommendations for career development and upskilling. 📚
+    
+    - [SkillsFuture Singapore](https://www.skillsfuture.gov.sg/)
+    - [Workforce Singapore (WSG)](https://www.wsg.gov.sg/)
+    - [MyCareersFuture](https://content.mycareersfuture.gov.sg/)
     """)
 
 # How to Use This App

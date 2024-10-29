@@ -27,38 +27,28 @@ st.image("mainportal_banner.jpg", use_column_width=True)
 st.subheader("🌟Use Cases of Portal🌟")
 
 # Creating columns for feature selection
-col1, col2, col3 = st.columns(3)
+col1, col2 = st.columns(2)
 
 selected_feature = None
 
 with col1:
-    if st.button("General Career Guidance & Upskilling"):
-        selected_feature = "General Career Guidance & Upskilling"
+    if st.button("Career Guidance Workforce Singapore"):
+        selected_feature = "Career Guidance Workforce Singapore"
 
 with col2:
-    if st.button("SkillsFuture Upskilling Guidance"):
-        selected_feature = "SkillsFuture Upskilling Guidance"
+    if st.button("Upskilling with Skillsfuture"):
+        selected_feature = "Upskilling with Skillsfuture"
 
-with col3:
-    if st.button("Workforce Singapore Career Guidance"):
-        selected_feature = "Workforce Singapore Career Guidance"
-
-if selected_feature == "General Career Guidance & Upskilling":
+if selected_feature == "Career Guidance Workforce Singapore":
     st.markdown("""
-    **General Career Guidance & Upskilling**  
+    **Career Guidance Workforce Singapore**  
     - Our platform provides personalized career guidance based on your interests and goals, helping you find the right career path and upskilling opportunities. 🚀
     """)
 
-elif selected_feature == "SkillsFuture Upskilling Guidance":
+elif selected_feature == "Upskilling with Skillsfuture":
     st.markdown("""
-    **SkillsFuture Upskilling Guidance**  
+    **Upskilling with Skillsfuture**  
     - We provide tailored suggestions on the best courses and programs to help you use your SkillsFuture credits effectively and achieve your career goals. 🎓
-    """)
-
-elif selected_feature == "Workforce Singapore Career Guidance":
-    st.markdown("""
-    **Workforce Singapore Career Guidance**  
-    - Get specific advice related to Workforce Singapore programs, helping you explore available resources for career development. 📊
     """)
 
 # SkillsFuture or Workforce Singapore Career Guidance-Related Question
