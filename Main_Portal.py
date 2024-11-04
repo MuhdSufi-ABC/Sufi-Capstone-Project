@@ -27,7 +27,7 @@ st.image("mainportal_banner.jpg", use_column_width=True)
 st.subheader("🌟Use Cases of Portal🌟")
 
 # Creating columns for feature selection
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 selected_feature = None
 
@@ -38,6 +38,10 @@ with col1:
 with col2:
     if st.button("Upskilling with Skillsfuture"):
         selected_feature = "Upskilling with Skillsfuture"
+
+with col3:
+    if st.button("Skills Demand for the Future Economy 2023/24 report"):
+        selected_feature = "Skills Demand for the Future Economy 2023/24 report"
 
 if selected_feature == "Career Guidance Workforce Singapore":
     st.markdown("""
@@ -51,10 +55,16 @@ elif selected_feature == "Upskilling with Skillsfuture":
     - We provide tailored suggestions on the best courses and programs to help you use your SkillsFuture credits effectively and achieve your career goals. 🎓
     """)
 
+elif selected_feature == "Skills Demand for the Future Economy 2023/24 report":
+    st.markdown("""
+    **Skills Demand for the Future Economy 2023/24 report**  
+    - We provide an interactive way to explore and understand key insights from the Skills Demand for the Future Economy 2023/24 report.
+    """)
+
 # SkillsFuture or Workforce Singapore Career Guidance-Related Question
 st.write("""
-         Click on the tabs to discover how this portal can help you chart your career path, offering personalized guidance and showing you 
-         how to make the most of SkillsFuture for your upskilling journey. 
+         Click on the tabs to discover how this portal can help you chart your career path, offering personalized guidance, showing you 
+         how to make the most of SkillsFuture for your upskilling journey and insights about skills demand for the future economy. 
 
          If you're ready to explore further, simply select the pages on the left."""
          )

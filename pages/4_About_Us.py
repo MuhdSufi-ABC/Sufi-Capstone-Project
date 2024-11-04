@@ -1,4 +1,5 @@
 import streamlit as st
+from helper_functions.utility import check_password 
 
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
@@ -23,6 +24,9 @@ st.write("""
          
          """)
 
+# Check if the password is correct.  
+if not check_password():  
+    st.stop() 
 
 with st.expander("**🌱Project Scope Statement**"):
     st.markdown("""
@@ -30,7 +34,8 @@ with st.expander("**🌱Project Scope Statement**"):
     
     **Use Cases:**
     1. Career Guidance Workforce Singapore  
-    2. Upskilling with SkillsFuture  
+    2. Upskilling with SkillsFuture
+    3. Skills Demand for the Future Economy 2023/24 insights
     """)
 
 with st.expander("**🤖Career Guidance & Skills Development**"):
@@ -55,6 +60,7 @@ with st.expander("**📚 Data Sources**"):
     - [SkillsFuture Singapore](https://www.skillsfuture.gov.sg/)
     - [Workforce Singapore (WSG)](https://www.wsg.gov.sg/)
     - [MyCareersFuture](https://content.mycareersfuture.gov.sg/)
+    - [Skills Demand for the Future Economy 2023/24 report](https://www.skillsfuture.gov.sg/skillsreport)
     """)
 
 # How to Use This App

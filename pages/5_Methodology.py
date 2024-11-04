@@ -1,4 +1,5 @@
 import streamlit as st
+from helper_functions.utility import check_password 
 
 # region <--------- Streamlit App Configuration --------->
 st.set_page_config(
@@ -12,14 +13,22 @@ st.title("Methodology")
 st.write("""
 This project leverages Large Language Model (LLM) techniques in combination with Retrieval-Augmented Generation (RAG) learnt during AI Bootcamp 2024 to provide accurate and efficient responses. Below, we detail the methodology employed in our approach.      
 """)
-# Create two columns for displaying the images side by side
-col1, col2 = st.columns(2)
+
+# Check if the password is correct.  
+if not check_password():  
+    st.stop() 
+
+# Create three columns for displaying the images side by side
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.image("Career_Guidance_Flow.drawio.png", caption='Career Guidance Flow Diagram')
 
 with col2:
-    st.image("Skillsfuture_Flow.drawio.png", caption='Skillfuture Flow Diagram')
+    st.image("Skillsfuture_Flow.drawio.png", caption='Skillsfuture Flow Diagram')
+
+with col3:
+    st.image("Skills_report.drawio.png", caption='Skills Demand Flow Diagram')
 
 st.write("""
 ### RAG Architecture Overview
@@ -30,7 +39,7 @@ st.write("**1. Start:** User initiates a query through the portal, which starts 
 
 st.write("**2. Input User Query:** User enters query through the interface. This interface is designed to be user-friendly and intuitive, allowing users to express their questions or information needs clearly.")
 
-st.write("**3. Scrape Relevant Websites:** Scrape relevant websites for information. For example, scrape data from websites like SkillsFuture and Workforce Singapore (WSG). This ensures that the most current and accurate information is collected to address the user's query.")
+st.write("**3. Scrape Relevant Websites or PDF:** Scrape relevant websites or PDF for information. For example, scrape data from websites like SkillsFuture and Workforce Singapore (WSG). This ensures that the most current and accurate information is collected to address the user's query.")
 
 st.write("**4. Process Query and Data:** Process the user query along with the scraped data to understand the context and extract relevant information. This involves analyzing the query and matching it with the data gathered.")
 
